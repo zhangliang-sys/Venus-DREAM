@@ -35,6 +35,7 @@ pip install -r requirements.txt
 ## Usage
 ### Data Preparation
 Description: Prepare sequence retrieval data using different strategies
+
 ###Key Features:
 Multiple retrieval options
 Configurable top-k selection
@@ -85,11 +86,14 @@ Support for both MAML and Reptile
 Multiple evaluation metrics
 Prediction output in CSV format
 # For MAML
+```bash
 python maml.py --mode test --retrieval_strategy opt_retrieval
-
+```
 # For Reptile
+```bash
 python reptile.py --mode test --retrieval_strategy opt_retrieval
-Command Line Arguments
+```
+### Command Line Arguments
 Mode Options:
 
 --mode: train or test
