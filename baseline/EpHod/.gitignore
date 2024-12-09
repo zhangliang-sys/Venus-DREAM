@@ -1,0 +1,16 @@
+# 忽略所有文件和文件夹
+*
+*/
+
+# 不忽略 .py 文件
+!*.py
+
+# 不忽略 .gitignore 文件
+!.gitignore
+
+# 忽略 __pycache__ 目录
+__pycache__/
+
+# 忽略 .pyc 文件（Python 编译文件）
+*.pyc
+
