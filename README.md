@@ -102,7 +102,7 @@ python reptile.py \
 Please cite our work if you use this code in your research:
 
 ```bibtex
-@article{zhang2023deep,
+@article{zhang2024deep,
     title={A Deep Retrieval-Enhanced Meta-learning Framework for Enzyme Optimum pH Prediction},
     author={Liang Zhang, Kuan Luo, Ziyi Zhou, Yuanxi Yu, Fan Jiang, Banghao Wu, Mingchen Li, and Liang Hong},
     journal={Under Review},   
