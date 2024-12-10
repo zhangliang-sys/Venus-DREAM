@@ -28,8 +28,8 @@ To install the project, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/protein-ph-prediction.git
-cd protein-ph-prediction
+git clone https://github.com/zhangliang-sys/PRO-DREAM.git
+cd PRO-DREAM
 
 # Install requirements
 pip install -r requirements.txt
@@ -76,21 +76,6 @@ python reptile.py \
     --topk 5
 ```
 
-### Model Evaluation
-
-Evaluate trained models on the test set:
-
-- **For MAML**:
-
-```bash
-python maml.py --mode test --retrieval_strategy opt_retrieval
-```
-
-- **For Reptile**:
-
-```bash
-python reptile.py --mode test --retrieval_strategy opt_retrieval
-```
 
 ### Command Line Arguments
 
@@ -107,8 +92,8 @@ python reptile.py --mode test --retrieval_strategy opt_retrieval
     - `opt_retrieval_scaled_0.6`: 60% scaled retrieval
 
 - **Training Parameters**:
-  - `--topk`: Number of sequences to retrieve (default: 5)
-  - `--meta_lr`: Meta-learning rate
+  - `--topk`: Number of sequences to retrieve
+  - `--meta_lr`: Outer loop learning rate
   - `--inner_lr`: Inner loop learning rate
   - `--num_epochs`: Number of training epochs
 
@@ -129,11 +114,12 @@ python reptile.py --mode test --retrieval_strategy opt_retrieval
 Please cite our work if you use this code in your research:
 
 ```bibtex
-@article{your-paper,
-  title={Your Paper Title},
-  author={Your Name},
-  journal={Journal Name},
-  year={2023}
+@article{zhang2023deep,
+    title={A Deep Retrieval-Enhanced Meta-learning Framework for Enzyme Optimum pH Prediction},
+    author={Liang Zhang, Kuan Luo, Ziyi Zhou, Yuanxi Yu, Fan Jiang, Banghao Wu, Mingchen Li, and Liang Hong},
+    journal={Under Review},    % 或 "Submitted to [Journal Name]"
+    year={2024},
+
 }
 ```
 
