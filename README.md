@@ -10,7 +10,7 @@ This is a meta-learning framework for predicting protein pH using MAML and Repti
 
 - **Meta-Learning Implementations**:
   - **MAML** (Model-Agnostic Meta-Learning)
-  - **Reptile** algorithm
+  - **Reptile** 
   
 - **Sequence Retrieval Strategies**:
   - **Similarity-based** retrieval using ESM2 embeddings
@@ -18,9 +18,7 @@ This is a meta-learning framework for predicting protein pH using MAML and Repti
   - **Fixed random** selection
   - **Scaled retrieval** with different dataset sizes
 
-- **Model Architecture**:
-  - Based on **ESM2** protein language model
-  - Supports both pretrained and randomly initialized models
+
 
 ## Installation
 
@@ -97,17 +95,7 @@ python reptile.py \
   - `--inner_lr`: Inner loop learning rate
   - `--num_epochs`: Number of training epochs
 
-## Project Structure
 
-- **Core Components**:
-  - `maml.py`: MAML implementation
-  - `reptile.py`: Reptile implementation
-  - `retrieval.py`: Sequence retrieval strategies
-
-- **Supporting Files**:
-  - `models/`: Model architectures
-  - `utils/`: Utility functions
-  - `data/`: Data directory
 
 ## Citation
 
@@ -117,7 +105,7 @@ Please cite our work if you use this code in your research:
 @article{zhang2023deep,
     title={A Deep Retrieval-Enhanced Meta-learning Framework for Enzyme Optimum pH Prediction},
     author={Liang Zhang, Kuan Luo, Ziyi Zhou, Yuanxi Yu, Fan Jiang, Banghao Wu, Mingchen Li, and Liang Hong},
-    journal={Under Review},    % 或 "Submitted to [Journal Name]"
+    journal={Under Review},   
     year={2024},
 
 }
